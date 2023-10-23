@@ -33,7 +33,8 @@ const HomePage = () => {
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
+      <div className="flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-center bg-no-repeat bg-cover backdrop-darken-[.3]">
+        <div className="absolute inset-0 bg-gray opacity-50"></div>
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -44,7 +45,7 @@ const HomePage = () => {
         >
           <motion.h1
             variants={animationVariants.fadeLeft}
-            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-4xl max-w-lg "
+            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-4xl max-w-lg shadow-lg"
           >
             Haz tu interior más minimalista y moderno
           </motion.h1>
