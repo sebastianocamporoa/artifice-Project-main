@@ -121,7 +121,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
 
             <Link onClick={scrollToTop} to="/contact">
               <Button
-                content={"Contact Us"}
+                content={"Contactanos"}
                 fontSize={"text-xl"}
                 fontWeight={""}
                 padding={"px-5 py-2"}

@@ -78,8 +78,11 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-                We build quality real estate projects
-                <span className=" text-red-500 title-font "> since 1998</span>
+                El espacio&nbsp;
+                <span className=" text-red-500 title-font ">
+                  es tuyo,&nbsp;
+                </span>
+                el diseño interior es nuestro
               </h2>
             </motion.div>
           </div>
@@ -91,10 +94,10 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                itaque nesciunt similique dolore illum eaque repellat eligendi
-                nemo odit fugit in, impedit ad excepturi architecto dolores
-                quaerat accusantium! Sapiente, repellendus!
+                Idealo se especializa en diseño interior, mejorando la calidad
+                de vida con espacios funcionales y armónicos. Ofrecemos soporte
+                personalizado y productos de alta calidad, cubriendo desde la
+                asesoría hasta la entrega, para una experiencia integral.
               </p>
               <Link onClick={scrollToTop} to={"/about"}>
                 <Button
@@ -122,21 +125,14 @@ const HomePage = () => {
             className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
           >
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
+              Nuestros servicios
             </h2>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+              Ofrecemos soluciones integrales centradas en la fiabilidad, la
+              calidad y la comunicación eficaz. Comprometidos con tu
+              satisfacción, priorizamos tus necesidades para brindarte
+              resultados excepcionales.
             </p>
-            <Link onClick={scrollToTop} to={"/about"}>
-              <button
-                style={{ borderWidth: 1.5, borderRadius: 4 }}
-                className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"
-              >
-                About Us
-              </button>
-            </Link>
           </motion.div>
 
           <motion.div
@@ -150,17 +146,17 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/reliability.png"}
                 iconAlt={"reliability"}
-                title={"Reliability"}
+                title={"Creer"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Precio: $210.000. Asesoría para 3 espacios que incluye: Moodboard, referentes del espacio, paleta cromática y elementos decorativos."
                 }
               />
               <WhatWeDoCard
                 iconSrc={"/icons/communication.png"}
                 iconAlt={"communication"}
-                title={"communication"}
+                title={"Crecer"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Precio: $280.000. Asesoría para 3 espacios con Moodboard, planos, referentes, paleta cromática, elementos decorativos, medidas y diseño de mobiliario."
                 }
               />
             </div>
@@ -172,9 +168,9 @@ const HomePage = () => {
               <WhatWeDoCard
                 iconSrc={"/icons/quality-first.png"}
                 iconAlt={"quality-first"}
-                title={"Quality First"}
+                title={"Crear"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Precio: $340.000. Asesoría para 2 espacios que abarca desde Moodboard hasta diseño de mobiliario, además de 2 renders por espacio."
                 }
               />
               <div
