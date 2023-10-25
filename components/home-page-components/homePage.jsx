@@ -6,7 +6,7 @@ import ProjectCard from "./projectCard";
 import Carousel from "./carousel";
 import ReviewCard from "./reviewCard";
 import PartnerBrandCard from "./partnerBrandCard";
-import { rentHouses } from "../../constants/data";
+import { proyects } from "../../constants/data";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
 import { showCase } from "../../constants/showcase";
@@ -188,66 +188,66 @@ const HomePage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-5xl max-md:text-4xl font-semibold text-center"
           >
-            Exclusive Properties
+            Proyectos Exitosos
           </motion.h2>
           <div className="flex flex-col gap-5 mt-10 max-sm:mt-8">
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[0].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[0].name}
-                  pricing={rentHouses[0].price}
-                  type={rentHouses[0].type}
-                  href={rentHouses[0].id}
+                  imgSrc={proyects[0].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[0].name}
+                  pricing={proyects[0].price}
+                  type={proyects[0].type}
+                  href={proyects[0].id}
                 />
               </div>
               <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[1].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[1].name}
-                  pricing={rentHouses[1].price}
-                  type={rentHouses[1].type}
-                  href={rentHouses[1].id}
+                  imgSrc={proyects[1].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[1].name}
+                  pricing={proyects[1].price}
+                  type={proyects[1].type}
+                  href={proyects[1].id}
                 />
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[2].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[2].name}
-                  pricing={rentHouses[2].price}
-                  type={rentHouses[2].type}
-                  href={rentHouses[2].id}
+                  imgSrc={proyects[2].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[2].name}
+                  pricing={proyects[2].price}
+                  type={proyects[2].type}
+                  href={proyects[2].id}
                 />
               </div>
             </div>
             <div className=" flex gap-5 max-lg:flex-col">
               <div className="w-2/4 gap-5 flex max-lg:w-full max-sm:flex-col">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[3].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[3].name}
-                  pricing={rentHouses[3].price}
-                  type={rentHouses[3].type}
-                  href={rentHouses[3].id}
+                  imgSrc={proyects[3].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[3].name}
+                  pricing={proyects[3].price}
+                  type={proyects[3].type}
+                  href={proyects[3].id}
                 />
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[4].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[4].name}
-                  pricing={rentHouses[4].price}
-                  type={rentHouses[4].type}
-                  href={rentHouses[4].id}
+                  imgSrc={proyects[4].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[4].name}
+                  pricing={proyects[4].price}
+                  type={proyects[4].type}
+                  href={proyects[4].id}
                 />
               </div>
               <div className="w-2/4 max-lg:w-full">
                 <ExculusivePropertyCard
-                  imgSrc={rentHouses[5].mainImage}
-                  titlePart1={"House in "}
-                  titlePart2={rentHouses[5].name}
-                  pricing={rentHouses[5].price}
-                  type={rentHouses[5].type}
-                  href={rentHouses[5].id}
+                  imgSrc={proyects[5].mainImage}
+                  titlePart1={""}
+                  titlePart2={proyects[5].name}
+                  pricing={proyects[5].price}
+                  type={proyects[5].type}
+                  href={proyects[5].id}
                 />
               </div>
             </div>
@@ -257,7 +257,7 @@ const HomePage = () => {
       {/* what we do section end */}
 
       {/* appreciation section start */}
-      <div className="bg-white">
+      {/* <div className="bg-white">
         <div
           style={{ maxWidth: 1200 }}
           className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
@@ -383,10 +383,10 @@ const HomePage = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* appreciation section end */}
       {/* review section start */}
-      <div className="bg-gray-100">
+      {/* <div className="bg-gray-100">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-16 p-10 max-md:px-5 py-28 "
@@ -444,10 +444,10 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* review section end */}
       {/* partner brand section start */}
-      <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
+      {/* <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
@@ -471,7 +471,7 @@ const HomePage = () => {
             })}
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* partner brand section end */}
     </div>
   );

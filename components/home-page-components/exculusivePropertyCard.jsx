@@ -10,7 +10,6 @@ const ExculusivePropertyCard = ({
   titlePart2,
   pricing,
   imgSrc,
-  type,
   href,
   cardHeight,
   bgColor,
@@ -41,14 +40,6 @@ const ExculusivePropertyCard = ({
       >
         {/* <a href="" className="absolute w-full h-full block "></a> */}
       </Link>
-      <Link onClick={scrollToTop} to={`/${type}`}>
-        <Button
-          content={type}
-          fontSize={"text-xl"}
-          padding={"px-3  py-0.5"}
-          furtherClasses={"tracking-widest absolute top-6 left-6 uppercase"}
-        />
-      </Link>
       <div className="flex flex-col gap-3  text-white absolute bottom-6 left-6 right-6 ">
         <Link
           onClick={scrollToTop}
@@ -59,7 +50,6 @@ const ExculusivePropertyCard = ({
           <span className="title-font">{titlePart2}</span>
         </Link>
         <hr />
-        <p className="text-lg">{formatCompactNumber(pricing)} PKR/Month</p>
       </div>
     </div>
   );

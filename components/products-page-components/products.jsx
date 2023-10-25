@@ -14,7 +14,7 @@ import { formatCompactNumber } from "../../constants/formatNumber";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
 import { useParams } from "react-router";
-import { rentHouses } from "../../constants/data";
+// import { rentHouses } from "../../constants/data";
 import ExculusivePropertyCard from "../home-page-components/exculusivePropertyCard";
 const Product = ({
   id,
@@ -56,11 +56,11 @@ const Product = ({
   }, [cartItems]);
 
   useEffect(() => {
-    setOtherItems(
-      rentHouses.filter((e, i) => {
-        return e.id != id;
-      })
-    );
+    // setOtherItems(
+    //   rentHouses.filter((e, i) => {
+    //     return e.id != id;
+    //   })
+    // );
   }, []);
   useEffect(() => {
     const body = document.getElementsByTagName("body").item(0);

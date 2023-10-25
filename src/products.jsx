@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import Product from "../components/products-page-components/products";
-import { rentHouses } from "../constants/data";
+// import { rentHouses } from "../constants/data";
 import { useParams } from "react-router";
 const Products = () => {
   const params = useParams();
-  const product = rentHouses[params.id - 1];
+  // const product = rentHouses[params.id - 1];
   useEffect(() => {
     document.title = `House in ${product.name} - Homyz `;
   }, [params]);
