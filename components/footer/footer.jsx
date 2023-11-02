@@ -50,25 +50,26 @@ const Footer = () => {
     const errors = validateForm(formData);
 
     if (errors === false) {
-      setBtnLoader(true);
-      axios
-        .post("https://homyz-server.vercel.app/contact", formData)
-        .then((response) => {
-          showToast();
-          setFormData({
-            firstName: "",
-            lastName: "",
-            phoneNo: "",
-            email: "",
-            message: "",
-          });
-          setBtnLoader(false);
-        })
-        .catch((error) => {
-          setBtnLoader(false);
-          errorToast(error.message, "error");
-          console.error("Error submitting form:", error);
-        });
+      // setBtnLoader(true);
+      // axios
+      //   .post("https://homyz-server.vercel.app/contact", formData)
+      //   .then((response) => {
+      //     showToast();
+      //     setFormData({
+      //       firstName: "",
+      //       lastName: "",
+      //       phoneNo: "",
+      //       email: "",
+      //       message: "",
+      //     });
+      //     setBtnLoader(false);
+      //   })
+      //   .catch((error) => {
+      //     setBtnLoader(false);
+      //     errorToast(error.message, "error");
+      //     console.error("Error submitting form:", error);
+      //   });
+      console.log(formData);
     }
   };
 
@@ -136,13 +137,10 @@ const Footer = () => {
         <div className="flex flex-col items-start h-auto justify-between gap-16 w-2/4 max-lg:w-full pr-10 max-sm:pr-0">
           <div className="flex flex-col text-lg items-start  justify-between gap-10 ">
             <a href="/">
-              <img src="/Homyz-logo.png" className="w-36" alt="Homyz-logo" />
+              <img src="/logo.png" className="w-42" alt="logo" />
             </a>
             <p style={{ color: "#696969" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-              pariatur. Fugit dignissimos aut tempora ullam similique minima
-              culpa quod fuga, doloribus expedita, cupiditate sint, nulla
-              distinctio soluta. Aut, sequi quia.
+              Transformamos tus espacios, reflejamos tu esencia.
             </p>
             <div className="flex text-xl justify-start items-center gap-10 text-red-500">
               <Link target="_blank" to={"https://facebook.com"}>
@@ -161,39 +159,34 @@ const Footer = () => {
                 className="hover:text-red-500 transition-all"
                 to="/"
               >
-                Home
+                Inicio
               </Link>
               <Link
                 onClick={scrollToTop}
                 className="hover:text-red-500 transition-all"
                 to="/services"
               >
-                Services
+                Blog
               </Link>
               <Link
                 onClick={scrollToTop}
                 className="hover:text-red-500 transition-all"
                 to="/about"
               >
-                About Us
-              </Link>
-              <Link
-                onClick={scrollToTop}
-                className="hover:text-red-500 transition-all"
-                to="/contact"
-              >
-                Contact Us
+                Sobre nosotros
               </Link>
             </ul>
           </div>
-          <p style={{ color: "#696969" }}>© Homyz. All Rights Reserved 2023.</p>
+          <p style={{ color: "#696969" }}>© Artifice.</p>
         </div>
 
         <div
           id="contact"
           className="w-2/4 max-lg:w-full flex flex-col h-auto justify-between items-start gap-10 "
         >
-          <h1 className="text-3xl text-white">Get in Touch</h1>
+          <h1 className="text-3xl text-white">
+            Dejanos tus datos y te contactaremos
+          </h1>
           <div className="name w-full gap-8 text-white max-sm:flex-col max-sm:gap-10 mt-3 flex">
             <Input
               pl={3}
@@ -202,8 +195,8 @@ const Footer = () => {
               borderColor={"#696969"}
               focusBorderColor="white"
               _placeholder={{ color: "#696969" }}
-              placeholder="First Name"
-              name="firstName"
+              placeholder="Nombres"
+              name="Nombres"
               maxLength={20}
               value={formData.firstName}
               onChange={handleChange}
@@ -216,8 +209,8 @@ const Footer = () => {
               borderColor={"#696969"}
               focusBorderColor="white"
               _placeholder={{ color: "#696969" }}
-              placeholder="Last Name"
-              name="lastName"
+              placeholder="Apellidos"
+              name="Apellidos"
               maxLength={20}
               value={formData.lastName}
               onChange={handleChange}
@@ -232,7 +225,7 @@ const Footer = () => {
               borderColor={"#696969"}
               focusBorderColor="white"
               _placeholder={{ color: "#696969" }}
-              placeholder="Email Address"
+              placeholder="Email"
               name="email"
               maxLength={40}
               value={formData.email}
@@ -247,7 +240,7 @@ const Footer = () => {
               focusBorderColor="white"
               _placeholder={{ color: "#696969" }}
               type="number"
-              placeholder="Phone No"
+              placeholder="# de telefono"
               name="phoneNo"
               value={formData.phoneNo}
               onChange={handleChange}
@@ -263,7 +256,7 @@ const Footer = () => {
             borderColor={"#696969"}
             focusBorderColor="white"
             _placeholder={{ color: "#696969" }}
-            placeholder="Message"
+            placeholder="Mensaje"
             maxLength={200}
             className="w-full text-white"
             name="message"
@@ -287,7 +280,7 @@ const Footer = () => {
             fontSize={"20px"}
             borderRadius={"4px"}
           >
-            Submit
+            Enviar
           </Button>
         </div>
       </footer>

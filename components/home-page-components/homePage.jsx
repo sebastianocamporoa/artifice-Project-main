@@ -99,7 +99,8 @@ const HomePage = () => {
                 personalizado y productos de alta calidad, cubriendo desde la
                 asesoría hasta la entrega, para una experiencia integral.
               </p>
-              <Link onClick={scrollToTop} to={"/about"}>
+              {/* <Link onClick={scrollToTop} to={"/about"}> */}
+              <Link onClick={scrollToTop} to={"/"}>
                 <Button
                   content={"Sobre nosotros"}
                   fontSize={"text-xl"}

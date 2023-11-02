@@ -456,7 +456,8 @@ const ContactPage = () => {
               urna in elit amet blandit enim lacinia. Tellus leo felis et vel
               eget maecenas.
             </p>
-            <Link to="/about" onClick={scrollToTop}>
+            {/* <Link to="/about" onClick={scrollToTop}> */}
+            <Link to="/" onClick={scrollToTop}>
               <button
                 style={{ borderWidth: 1.5, borderRadius: 4 }}
                 className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"

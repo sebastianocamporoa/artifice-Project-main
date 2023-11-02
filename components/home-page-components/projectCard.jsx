@@ -25,14 +25,16 @@ const ProjectCard = ({ src, title, href }) => {
       </motion.div>
       <Link
         onClick={scrollToTop}
-        to={`/projects/${href}`}
+        // to={`/projects/${href}`}
+        to={`/`}
         className="absolute w-full h-full block "
       ></Link>
 
       <div className="flex flex-col gap-3  text-white absolute bottom-6 left-6 right-6 ">
         <Link
           onClick={scrollToTop}
-          to={`/projects/${href}`}
+          // to={`/projects/${href}`}
+          to={`/`}
           target="_blank"
           className="text-xl font-medium hover:text-red-500  transition-all"
         >

@@ -107,19 +107,22 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              to="/Services"
+              // to="/Services"
+              to="/"
             >
               Blog
             </Link>
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              to="/about"
+              // to="/about"
+              to="/"
             >
               Sobre nosotros
             </Link>
 
-            <Link onClick={scrollToTop} to="/contact">
+            {/* <Link onClick={scrollToTop} to="/contact"> */}
+            <Link onClick={scrollToTop} to="/">
               <Button
                 content={"Contactanos"}
                 fontSize={"text-xl"}
@@ -197,7 +200,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               hideNav();
               scrollToTop();
             }}
-            to="/services"
+            // to="/services"
+            to="/"
             className="hover:text-red-500 transition-all"
           >
             Blog
@@ -211,7 +215,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   hideNav();
                   scrollToTop();
                 }}
-                to={"/about"}
+                // to={"/about"}
+                to="/"
                 className="hover:text-red-500 transition-all w-full block"
               >
                 Sobre nosotros
@@ -221,7 +226,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   hideNav();
                   scrollToTop();
                 }}
-                to={"/contact"}
+                // to={"/contact"}
+                to="/"
                 className="hover:text-red-500 transition-all w-full block"
               >
                 <Button

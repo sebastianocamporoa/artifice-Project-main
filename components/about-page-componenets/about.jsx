@@ -252,7 +252,8 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  to={"/services"}
+                  // to={"/services"}
+                  to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
                 >
@@ -262,7 +263,8 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  to={"/services"}
+                  // to={"/services"}
+                  to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
                 >
@@ -272,7 +274,8 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  to={"/services"}
+                  // to={"/services"}
+                  to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
                 >
@@ -282,7 +285,8 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  to={"/services"}
+                  // to={"/services"}
+                  to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
                 >
@@ -358,7 +362,8 @@ const AboutPage = () => {
               </div>
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
-              <Link onClick={scrollToTop} to={"/contact"}>
+              {/* <Link onClick={scrollToTop} to={"/contact"}> */}
+              <Link onClick={scrollToTop} to={"/"}>
                 <Button
                   content={"Get In Touch"}
                   padding={"px-6 py-3"}
