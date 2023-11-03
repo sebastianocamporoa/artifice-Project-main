@@ -258,7 +258,7 @@ const HomePage = () => {
       {/* what we do section end */}
 
       {/* appreciation section start */}
-      {/* <div className="bg-white">
+      <div className="bg-white">
         <div
           style={{ maxWidth: 1200 }}
           className="p-10 max-md:px-5 py-28 mx-auto grid grid-cols-2 grid-rows-1 gap-20 max-lg:grid-cols-1 max-lg:grid-rows-2 "
@@ -274,14 +274,14 @@ const HomePage = () => {
               variants={animationVariants.fadeLeft}
               className="text-5xl max-md:text-4xl font-semibold"
             >
-              We use Real Estate to show our appreciation of the world.
+              Transformamos tus espacios, reflejamos tu esencia.
             </motion.h1>
             <motion.p
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-              We provide equity and debt capital globally to back projects that
-              make an impact.
+              Diseño y decoración con calidad y pasión, para una experiencia de
+              marca única.
             </motion.p>
             <motion.div
               variants={animationVariants.fadeLeft}
@@ -289,41 +289,43 @@ const HomePage = () => {
             >
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  4
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Años de experiencia exitosa en diseño de interiores
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  +9
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Proyectos exitosos con constructoras grandes, medianas y
+                  pequeñas
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  +15
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Familias que mejoraron su calidad de vida gracias a nuestros
+                  diseños
                 </p>
               </div>
               <div className="flex flex-col max-lg:justify-center max-lg:items-center">
                 <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
+                  98%
                 </h2>
                 <p className="text-xl">
-                  Years of seccessful experience in real estate
+                  Clientes satisfechos con nuestra puntualidad y creatividad
                 </p>
               </div>
             </motion.div>
             <motion.div variants={animationVariants.fadeLeft}>
               <Link onClick={scrollToTop} to={"/contact"}>
                 <Button
-                  content={"Get In Touch"}
+                  content={"Ponte en contacto"}
                   padding={"px-6 py-3"}
                   fontSize={"text-xl"}
                 />
@@ -333,7 +335,7 @@ const HomePage = () => {
           <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
             <div className=" h-full w-full relative overflow-hidden rounded-lg">
               <img
-                src="/appriciation-section-image.jpg"
+                src="/proyects/primavera/primavera2.jpg"
                 className="absolute w-full h-full object-cover object-center "
                 alt=""
               />
@@ -351,7 +353,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           style={{ maxWidth: 1200 }}
           className="mx-auto destination-section p-10 max-md:px-5  pb-28"
         >
@@ -383,8 +385,8 @@ const HomePage = () => {
               }
             })}
           </div>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
       {/* appreciation section end */}
       {/* review section start */}
       {/* <div className="bg-gray-100">
