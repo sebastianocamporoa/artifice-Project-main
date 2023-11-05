@@ -214,7 +214,7 @@ const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
           </Link>
         </motion.div>
       </div>
-      <FreeTrial />
+      {/* <FreeTrial /> */}
     </>
   );
 };

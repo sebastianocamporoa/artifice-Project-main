@@ -114,8 +114,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              // to="/about"
-              to="/"
+              to="/about"
+              //to="/"
             >
               Sobre nosotros
             </Link>

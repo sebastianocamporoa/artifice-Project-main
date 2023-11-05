@@ -14,7 +14,7 @@ import "./about.css";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-[url(/blogs-page-images/service-hero-bg.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div className="bg-[url(/proyects/artco/artco1.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
         <motion.div
           initial="initial"
           whileInView="animate"

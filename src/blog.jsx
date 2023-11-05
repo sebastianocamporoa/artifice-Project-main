@@ -6,26 +6,26 @@ import { blogData } from "../constants/blogData";
 const Blog = () => {
   const navigate = useNavigate();
   const params = useParams();
-  const blogData = blogData[params.id - 1];
+  const serviceData = blogData[params.id - 1];
 
   useEffect(() => {
-    const blogData = blogData.findIndex((e, i) => {
+    const serviceData = blogData.findIndex((e, i) => {
       return e.id == params.id;
     });
-    if (blogData === -1) {
+    if (serviceData === -1) {
       navigate("/*");
     }
   }, []);
   useEffect(() => {
-    document.title = `Blogs - ${blogData.title} `;
+    document.title = `Blogs - ${serviceData.title} `;
   }, []);
   return (
     <BlogPage
-      id={blogData.id}
-      title={blogData.title}
-      breif={blogData.shortDescription}
-      descr={blogData.mainDescription}
-      imageSrc={blogData.image}
+      id={serviceData.id}
+      title={serviceData.title}
+      breif={serviceData.shortDescription}
+      descr={serviceData.mainDescription}
+      imageSrc={serviceData.image}
     />
   );
 };
