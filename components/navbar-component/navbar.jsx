@@ -107,8 +107,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             <Link
               onClick={scrollToTop}
               className="hover:text-red-500 transition-all"
-              // to="/Services"
-              to="/"
+              to="/blogs"
             >
               Blog
             </Link>
@@ -200,7 +199,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               hideNav();
               scrollToTop();
             }}
-            // to="/services"
+            // to="/blogs"
             to="/"
             className="hover:text-red-500 transition-all"
           >

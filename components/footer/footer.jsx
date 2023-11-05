@@ -164,7 +164,7 @@ const Footer = () => {
               <Link
                 onClick={scrollToTop}
                 className="hover:text-red-500 transition-all"
-                to="/services"
+                to="/blogs"
               >
                 Blog
               </Link>

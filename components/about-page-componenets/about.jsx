@@ -14,7 +14,7 @@ import "./about.css";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-[url(/services-page-images/service-hero-bg.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div className="bg-[url(/blogs-page-images/service-hero-bg.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -58,7 +58,7 @@ const AboutPage = () => {
               <h1 className="text-5xl font-bold title-font w-max">
                 What we offer
               </h1>
-              <Link onClick={scrollToTop} to={"/services"}>
+              <Link onClick={scrollToTop} to={"/blogs"}>
                 <Button
                   content={"Services"}
                   fontSize={"text-xl"}
@@ -252,7 +252,7 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  // to={"/services"}
+                  // to={"/blogs"}
                   to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
@@ -263,7 +263,7 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  // to={"/services"}
+                  // to={"/blogs"}
                   to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
@@ -274,7 +274,7 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  // to={"/services"}
+                  // to={"/blogs"}
                   to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"
@@ -285,7 +285,7 @@ const AboutPage = () => {
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
                 <h2>Investmennt Management</h2>
                 <Link
-                  // to={"/services"}
+                  // to={"/blogs"}
                   to={"/"}
                   onClick={scrollToTop}
                   className="text-red-500"

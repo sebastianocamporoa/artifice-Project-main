@@ -1,11 +1,11 @@
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
-} from "@chakra-ui/react";
+// import {
+//   Accordion,
+//   AccordionItem,
+//   AccordionButton,
+//   AccordionPanel,
+//   AccordionIcon,
+//   Box,
+// } from "@chakra-ui/react";
 import "./service.css";
 import {
   FaArrowRight,
@@ -18,7 +18,7 @@ import FreeTrial from "../free-trial-component/freeTrial";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
 import { scrollToTop } from "../../constants/scrollToTop";
-const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
+const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
   return (
     <>
       <div
@@ -51,55 +51,40 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
           className="w-2/3 max-lg:w-full flex flex-col gap-5"
         >
           <h1 className="text-[46px] leading-none max-md:text-4xl font-semibold">
-            Tuning in to what really matters
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            dolores?
           </h1>
           <div className="text-xl flex flex-col gap-3">
             <p>
-              We believe that technology and human-centered design are
-              revolutionizing brand experiences. Remarkable innovations are
-              allowing products to become more sentient and connected, enabling
-              greater connection between people. Our role is to ensure that each
-              product experience is attuned to people’s needs and relevant to
-              the rhythm and habits of their daily lives. Through first and
-              secondary research, we identify what will really matter to users
-              and we never let go of the vision that inspires great products.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              eius! Odio quas voluptatibus velit nostrum reprehenderit fugiat
+              architecto nam blanditiis repellat, optio iusto debitis
+              consequatur incidunt veniam cupiditate laudantium provident
+              perferendis amet earum accusamus! Facilis blanditiis voluptatibus
+              culpa optio debitis velit aliquid, placeat animi sit porro minima
+              odio, pariatur veritatis officia nostrum cupiditate omnis
+              necessitatibus laudantium quos voluptate adipisci aperiam iste
+              ipsam! Odio expedita aut impedit dolorem, recusandae id eaque
+              accusantium enim, iusto, laudantium dolor rerum eum praesentium at
+              facere.
             </p>
             <p>
-              Test your ideas with minimal risk. Test even the most complex
-              ideas, involving emerging technologies – like blockchain – with
-              the help of our expert Outsourceo team. We’ll help you with
-              predictions, roadmapping and post-PoC Development analysis, to
-              identify the best-fit solution with minimal financial risk.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, deserunt libero. Magni eos ullam aliquid vero qui ratione eligendi aperiam suscipit, ipsa consequatur quam nobis autem velit eius provident? Delectus, consequuntur provident ratione architecto reiciendis ut ea natus vero adipisci nisi vitae dolore voluptatum obcaecati. Officiis sunt aut autem delectus!
             </p>
             <p>
-              We help companies assess their skills and choose a new direction
-              which utilizes the talents of the team and resources most
-              productively.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod atque, doloribus harum cum ipsum, eveniet rerum, totam magnam dicta amet voluptates temporibus voluptatum qui! Maxime placeat voluptate voluptatum expedita.
             </p>
             <p>
-              As consumers have more and more product choices, the role of
-              design to bring clarity and relevance has never been more
-              necessary. Design will continue to be the significant difference
-              maker and the reason for choosing one product or experience over
-              another. On every product we look through the eyes of the user,
-              studying the experience critically and empathetically. Our
-              creative response combines strategy with execution to deliver
-              beautiful, innovative and differentiated design.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos nesciunt velit eum provident, voluptate repellendus labore sit minus vel veritatis eius perferendis earum repudiandae quam perspiciatis laborum odit asperiores similique eveniet iure. In, delectus?
             </p>
             <p>
-              Our team of software experts will provide a comprehensive project
-              evaluation, allowing you to develop your roadmap for success that
-              maximises the efficiency of your future projects.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto vero neque, sed exercitationem numquam et. Facere beatae omnis iste vero.
             </p>
             <p>
-              When it comes to encapsulating technical innovation in a form that
-              chimes with an end user, our early involvement, often before the
-              science leaves the bench, can help to ensure that the human
-              factors as well as the production design issues are considered at
-              the optimum stage in the process.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat expedita consequuntur iusto officiis obcaecati quaerat.
             </p>
           </div>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <Accordion
               className="text-xl flex flex-col gap-5 "
               allowToggle={true}
@@ -187,7 +172,7 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           initial="initial"
@@ -197,25 +182,25 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
           className="w-1/3 max-lg:w-full sticky top-36 questions-card p-8 gap-5 flex flex-col"
         >
           <h1 className="text-center text-2xl font-semibold">
-            Have Additional Questions?
+            ¿Tienes alguna duda?
           </h1>
           <div className="flex mt-2  gap-3 text-xl items-center">
             <div>
               <FaEnvelope className="text-red-500" />
             </div>
-            <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+            <p>carrera 1 #20 - 50, Bogotá</p>
           </div>
           <div className="flex  gap-3 text-xl items-center">
             <div>
               <FaPhone className="rotate-90 text-red-500" />
             </div>
-            <p>+92 39283848238</p>
+            <p>+57 3011111111</p>
           </div>
           <div className="flex  gap-3 text-xl items-center">
             <div>
               <FaMapMarkerAlt className="text-red-500" />
             </div>
-            <p>information@office.com</p>
+            <p>contacto@artifice.com</p>
           </div>
           <Link
             to="/contact"
@@ -223,7 +208,7 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
             className="text-red-500 hover:text-black transition-all duration-300"
           >
             <div className="flex items-center gap-1">
-              <p className="text-xl">Contact us</p>
+              <p className="text-xl">Contactanos</p>
               <FaArrowRight className="text-sm mt-[2px]" />
             </div>
           </Link>
@@ -234,4 +219,4 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
   );
 };
 
-export default ServicePage;
+export default BlogPage;

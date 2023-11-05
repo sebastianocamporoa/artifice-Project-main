@@ -1,14 +1,14 @@
 import Footer from "../components/footer/footer";
 import ShowCase1 from "./showcase1";
 import NavBar from "../components/navbar-component/navbar";
-import Services from "./services";
+import Blogs from "./blogs";
 import ShowCase2 from "./showcase2";
 import Error404 from "./error404";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutProject from "../components/project-page-components/aboutProject";
 import Products from "./products";
 import About from "./about";
-import Service from "./service";
+import Blog from "./blog";
 import HomePage from "../components/home-page-components/homePage";
 import Contact from "./contact";
 import Results from "./results";
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/services",
+    path: "/blogs",
     element: (
       <>
         <NavBar />
-        <Services />
+        <Blogs />
         <Footer />
       </>
     ),
@@ -45,11 +45,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/services/:id",
+    path: "/blogs/:id",
     element: (
       <>
         <NavBar />
-        <Service />
+        <Blog />
         <Footer />
       </>
     ),

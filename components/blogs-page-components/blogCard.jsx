@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { animationVariants } from "../../constants/animationVariants";
 import { scrollToTop } from "../../constants/scrollToTop";
-const ServiceCard = ({ id, title, imgSrc, iconSrc, brief }) => {
+const BlogCard = ({ id, title, imgSrc, iconSrc, brief }) => {
   return (
     <motion.div
       initial="initial"
@@ -29,12 +29,12 @@ const ServiceCard = ({ id, title, imgSrc, iconSrc, brief }) => {
           {brief}
         </p>
         <Link
-          to={`/services/${id}`}
+          to={`/blogs/${id}`}
           onClick={scrollToTop}
           className="it-content text-xl mt-10 font-semibold  opacity-0 scale-y-0 transition-all duration-75 origin-top hover:text-black"
         >
           <div className="flex justify-between gap-3 items-center">
-            <p className="duration-150">Read More </p>
+            <p className="duration-150">Leer más </p>
             <FaArrowRight className="duration-150" style={{ marginTop: 2 }} />
           </div>
         </Link>
@@ -43,4 +43,4 @@ const ServiceCard = ({ id, title, imgSrc, iconSrc, brief }) => {
   );
 };
 
-export default ServiceCard;
+export default BlogCard;
