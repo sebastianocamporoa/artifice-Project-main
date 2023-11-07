@@ -94,7 +94,7 @@ const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
                       How does SAASworld make money?
@@ -115,7 +115,7 @@ const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
                       What is the Top Rated program?
@@ -135,7 +135,7 @@ const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
                       What’s the difference between finding clients online,
@@ -156,7 +156,7 @@ const BlogPage = ({ id, title, breif, descr, imageSrc }) => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
                       How does SAASworld make money?

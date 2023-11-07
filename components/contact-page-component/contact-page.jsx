@@ -67,25 +67,25 @@ const ContactPage = () => {
     const errors = validateForm(formData);
 
     if (errors === false) {
-      setBtnLoader(true);
-      axios
-        .post("https://homyz-server.vercel.app/contact", formData)
-        .then((response) => {
-          showToast();
-          setFormData({
-            firstName: "",
-            lastName: "",
-            phoneNo: "",
-            email: "",
-            message: "",
-          });
-          setBtnLoader(false);
-        })
-        .catch((error) => {
-          setBtnLoader(false);
-          errorToast(error.message, "error");
-          console.error("Error submitting form:", error);
-        });
+      // setBtnLoader(true);
+      // axios
+      //   .post("https://homyz-server.vercel.app/contact", formData)
+      //   .then((response) => {
+      //     showToast();
+      //     setFormData({
+      //       firstName: "",
+      //       lastName: "",
+      //       phoneNo: "",
+      //       email: "",
+      //       message: "",
+      //     });
+      //     setBtnLoader(false);
+      //   })
+      //   .catch((error) => {
+      //     setBtnLoader(false);
+      //     errorToast(error.message, "error");
+      //     console.error("Error submitting form:", error);
+      //   });
     }
   };
 
@@ -156,7 +156,7 @@ const ContactPage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-6xl max-lg:mx-auto font-semibold max-sm:text-5xl max-w-lg "
           >
-            Contact Us
+            Contactanos
           </motion.h1>
           <motion.div
             initial="initial"
@@ -173,7 +173,7 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaEnvelope className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Services</h2>
+                <h2 className="title-font font-semibold ">Servicios</h2>
               </div>
               <p>Neque porro quisquam est, qui dolorem ipsum.</p>
             </motion.div>
@@ -185,7 +185,7 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaCoins className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Pricing</h2>
+                <h2 className="title-font font-semibold ">Precios</h2>
               </div>
               <p>Neque porro quisquam est, qui dolorem ipsum.</p>
             </motion.div>
@@ -197,7 +197,7 @@ const ContactPage = () => {
                 <div className="bg-red-500 w-[60px] h-[58px] rounded-md text-xl flex gap-4 justify-center items-center">
                   <FaMobileAlt className="text-white" />
                 </div>
-                <h2 className="title-font font-semibold ">Support</h2>
+                <h2 className="title-font font-semibold ">Soporte</h2>
               </div>
               <p>Neque porro quisquam est, qui dolorem ipsum.</p>
             </motion.div>
@@ -233,7 +233,7 @@ const ContactPage = () => {
               _focus={{ borderWidth: 0.1 }}
               color={"black"}
               _placeholder={{ color: "#696969" }}
-              placeholder="First Name"
+              placeholder="Nombres"
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
@@ -248,7 +248,7 @@ const ContactPage = () => {
               autoComplete="off"
               color={"black"}
               _placeholder={{ color: "#696969" }}
-              placeholder="Last Name"
+              placeholder="Apellidos"
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
@@ -264,7 +264,7 @@ const ContactPage = () => {
             maxLength={40}
             color={"black"}
             _placeholder={{ color: "#696969" }}
-            placeholder="Email Address"
+            placeholder="Email"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -281,7 +281,7 @@ const ContactPage = () => {
             color={"black"}
             _placeholder={{ color: "#696969" }}
             type="number"
-            placeholder="Phone No"
+            placeholder="# de teléfono"
             name="phoneNo"
             value={formData.phoneNo}
             onChange={handleChange}
@@ -296,7 +296,7 @@ const ContactPage = () => {
             maxLength={200}
             color={"black"}
             _placeholder={{ color: "#696969" }}
-            placeholder="Message"
+            placeholder="Mensaje"
             minHeight={"180px"}
             className="w-ful text-white"
             name="message"
@@ -304,10 +304,10 @@ const ContactPage = () => {
             onChange={handleChange}
           />
           <Button
-            _hover={{ backgroundColor: "white", color: "#d5515e" }}
-            backgroundColor={"#d5515e"}
+            _hover={{ backgroundColor: "white", color: "#826651" }}
+            backgroundColor={"#826651"}
             color={"white"}
-            borderColor={"#d5515e"}
+            borderColor={"#826651"}
             variant={"outline"}
             size={"lg"}
             isLoading={btnLoader}
@@ -319,7 +319,7 @@ const ContactPage = () => {
             fontSize={"20px"}
             borderRadius={"4px"}
           >
-            Submit
+            Enviar
           </Button>
         </motion.div>
         <motion.div
@@ -331,198 +331,35 @@ const ContactPage = () => {
         >
           <div className="text-5xl max-md:text-4xl max-md:text-center">
             <h1 className="font-semibold ">
-              Contact our support{" "}
+              Contactanos para empezar a hacer{" "}
               <span className="font-semibold title-font  text-red-500">
-                team to grow your business
+                realidad tus sueños
               </span>
             </h1>
           </div>
-          <p className="text-xl">
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis
-            voluptas assumenda est, omnis dolor repellendus.
-          </p>
           <div className="flex flex-col gap-3">
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+              <p>carrera 1 #20 - 50, Bogotá</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
-              <p>+92 39283848238</p>
+              <p>+57 3011111111</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
-              <p>information@office.com</p>
+              <p>contacto@artifice.com</p>
             </div>
           </div>
         </motion.div>
       </div>
 
-      {/* map section start */}
-      <div
-        style={{ maxWidth: 1200 }}
-        className="mx-auto w-full p-10 py-28 pt-10 max-sm:py-16 max-sm:pt-5 max-sm:px-5 "
-      >
-        <div className="bg-center bg-no-repeat bg-cover">
-          <div className="relative">
-            <img
-              src="/contact-page-images/map.png"
-              className="h-[379px] max-md:h-[440px] max-sm:h-[500px] max-md:object-cover max-md:object-[70%] max-sm:object-[60%]  "
-              alt=""
-            />
-            <div className="absolute flex justify-center items-center  bg-white/90  top-0 left-0 right-0 bottom-0">
-              <motion.div
-                initial="initial"
-                whileInView="animate"
-                variants={animationVariants.zoomOut}
-                viewport={{ once: true, amount: 0.2 }}
-                className="max-w-xl max-lg:max-w-lg max-sm:w-full text-center"
-              >
-                <h1 className="text-[46px] max-lg:text-4xl max-sm:text-[34px] max-[500px]:text-3xl leading-tight font-semibold">
-                  Whatever you are, you
-                  <br /> will definitely get a place
-                </h1>
-                <p className="text-xl mt-3">
-                  We provide equity and debt capital globally to back projects
-                  that make an impact.
-                </p>
-              </motion.div>
-            </div>
-
-            {/* map human images start */}
-            <div className="absolute top-24 max-md:top-6 left-16 max-lg:left-10  max-md:left-16 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/1.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="1"
-              />
-            </div>
-            <div className="absolute bottom-20 max-lg:bottom-12 left-36 max-lg:left-20 max-sm:left-10 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/2.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="2"
-              />
-            </div>
-            <div className="absolute top-12 right-36 max-lg:right-24 max-sm:right-12 w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/contact-page-images/3.jpg"
-                className="w-full h-full object-cover object-center"
-                alt="3"
-              />
-            </div>
-            {/* map human images end */}
-
-            {/* map points start */}
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute top-5 left-32 max-sm:left-5 max-sm:top-24">
-              <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
-            </div>
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute top-10 max-md:top-16 max-md:right-44 max-sm:right-32 right-64">
-              <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
-            </div>
-            <div className="w-7 h-7 bg-[#d5515e66] flex justify-center items-center rounded-full absolute bottom-16 right-28 max-md:right-0 max-md:bottom-20 max-md:left-44 max-sm:bottom-24 max-sm:left-32">
-              <div className="w-[18px] h-[18px] bg-red-500 rounded-full"></div>
-            </div>
-            {/* map points end */}
-          </div>
-        </div>
-      </div>
-
-      {/* what we do section start */}
-      <div className="bg-gray-100">
-        <div
-          style={{ maxWidth: 1200 }}
-          className=" mx-auto flex gap-5 justify-between items-start p-10 py-28 max-md:py-16 max-md:px-5 max-lg:flex-col max-lg:items-center  max-lg:gap-12"
-        >
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={animationVariants.zoomOut}
-            viewport={{ once: true, amount: 0.2 }}
-            className="w-1/3 max-lg:w-full max-lg:text-center flex flex-col gap-2 items-start max-lg:items-center"
-          >
-            <h2 className="text-5xl max-md:text-4xl font-bold title-font">
-              What we do
-            </h2>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
-            </p>
-            {/* <Link to="/about" onClick={scrollToTop}> */}
-            <Link to="/" onClick={scrollToTop}>
-              <button
-                style={{ borderWidth: 1.5, borderRadius: 4 }}
-                className="bg-transparent  text-black border-red-500 text-xl px-5 py-2 duration-300 hover:bg-red-500 hover:text-white transition-all mt-5 max-md:mt-3"
-              >
-                About Us
-              </button>
-            </Link>
-          </motion.div>
-
-          {/* <div className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"> */}
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            variants={animationVariants.fadeUp}
-            viewport={{ once: true, amount: 0.2 }}
-            className="cards w-2/3 max-lg:w-full flex justify-center max-md:flex-col max-md:items-center gap-7"
-          >
-            {/* <Reveal
-              triggerOnce={true}
-              className="flex flex-col gap-7 "
-              keyframes={fadeUp}
-            > */}
-
-            {/* <div className="flex flex-col gap-7 "> */}
-            <div className="flex flex-col gap-7 ">
-              <WhatWeDoCard
-                iconSrc={"/icons/reliability.png"}
-                iconAlt={"reliability"}
-                title={"Reliability"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-              <WhatWeDoCard
-                iconSrc={"/icons/communication.png"}
-                iconAlt={"communication"}
-                title={"communication"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-            </div>
-            <div className="flex flex-col gap-7">
-              <div
-                style={{ height: 130 }}
-                className="max-md:hidden rounded-lg w-80 bg-gradient-to-t from-white to-transparent"
-              ></div>
-              <WhatWeDoCard
-                iconSrc={"/icons/quality-first.png"}
-                iconAlt={"quality-first"}
-                title={"Quality First"}
-                desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
-                }
-              />
-              <div
-                style={{ height: 130 }}
-                className="max-md:hidden rounded-lg w-80 h-36 bg-gradient-to-b from-white to-transparent"
-              ></div>
-            </div>
-          </motion.div>
-          {/* </Reveal> */}
-        </div>
-      </div>
       <div
         style={{ maxWidth: 1200 }}
         className=" mx-auto  p-10 py-28 max-md:py-14 max-md:px-5 "
@@ -534,7 +371,7 @@ const ContactPage = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-5xl max-md:text-4xl font-semibold text-center  mb-16 max-md:mb-12"
         >
-          Customers frequently ask
+          Preguntas frecuentes
         </motion.h1>
         <motion.div
           initial="initial"
@@ -549,19 +386,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      How will I know if a special request is confirmed?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
 
@@ -570,19 +407,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      Can I request early check-in/late check-out?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem className="border-none box-shadow p-6">
@@ -590,19 +427,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      Where can I check my booking details and status?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem className="border-none box-shadow p-6">
@@ -610,19 +447,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      How will I know if a special request is confirmed?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
             </div>
@@ -632,20 +469,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      Can I choose the type of bed I want, request a smoking or
-                      non-smoking room?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
 
@@ -654,19 +490,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      When do I get a confirmation email?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem className="border-none box-shadow p-6">
@@ -674,19 +510,19 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      How can I cancel my booking?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem className="border-none box-shadow p-6">
@@ -694,27 +530,25 @@ const ContactPage = () => {
                   <AccordionButton
                     fontSize={"2xl"}
                     _hover={{ backgroundColor: "transparent" }}
-                    _expanded={{ color: "#ef4444" }}
+                    _expanded={{ color: "#826651" }}
                   >
                     <Box as="span" flex="1" textAlign="left">
-                      If I have booked accommodation, how can I check my
-                      cancellation policy?
+                      Lorem ipsum dolor sit amet?
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Many people has the notion that enlightenment is one state.
-                  Many also believe that when it is attained, a person is
-                  forever in that state.For your necessary discernment. Thank
-                  you for reading.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  beatae ex reiciendis? Ipsa nulla rem et adipisci cum vitae?
+                  Vero ipsam sit ab repellendus facere tempore, provident quia
+                  qui similique.
                 </AccordionPanel>
               </AccordionItem>
             </div>
           </Accordion>
         </motion.div>
       </div>
-      {/* what we do section end */}
     </div>
   );
 };

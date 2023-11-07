@@ -240,7 +240,7 @@ const Footer = () => {
               focusBorderColor="white"
               _placeholder={{ color: "#696969" }}
               type="number"
-              placeholder="# de telefono"
+              placeholder="# de teléfono"
               name="phoneNo"
               value={formData.phoneNo}
               onChange={handleChange}

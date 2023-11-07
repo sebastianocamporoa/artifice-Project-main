@@ -120,8 +120,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               Sobre nosotros
             </Link>
 
-            {/* <Link onClick={scrollToTop} to="/contact"> */}
-            <Link onClick={scrollToTop} to="/">
+            <Link onClick={scrollToTop} to="/contact">
               <Button
                 content={"Contactanos"}
                 fontSize={"text-xl"}

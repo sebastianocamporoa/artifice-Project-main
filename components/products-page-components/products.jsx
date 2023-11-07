@@ -136,11 +136,11 @@ const Product = ({
                 </NumberInputStepper>
               </NumberInput>
               <Button
-                // _hover={{ borderColor: "#d5515e" }}
-                _hover={{ backgroundColor: "white", color: "#d5515e" }}
-                backgroundColor={"#d5515e"}
+                // _hover={{ borderColor: "#826651" }}
+                _hover={{ backgroundColor: "white", color: "#826651" }}
+                backgroundColor={"#826651"}
                 color={"white"}
-                borderColor={"#d5515e"}
+                borderColor={"#826651"}
                 variant={"outline"}
                 size={"lg"}
                 isLoading={btnLoader}

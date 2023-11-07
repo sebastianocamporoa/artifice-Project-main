@@ -3,7 +3,7 @@ import ContactPage from "../components/contact-page-component/contact-page";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Contact Us - Homyz";
+    document.title = "Contactanos - Artifice";
   }, []);
   return (
     <div className="overflow-hidden">
