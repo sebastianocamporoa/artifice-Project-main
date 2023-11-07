@@ -24,7 +24,7 @@ const AboutPage = () => {
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
-            <h1 className="text-5xl font-bold">Quienes somos</h1>
+            <h1 className="text-8xl font-bold">Quienes somos</h1>
             <p className="text-xl max-w-md">
               Innovación y Diseño en Cada Espacio
             </p>
@@ -154,7 +154,7 @@ const AboutPage = () => {
               </h1>
             </div>
           </motion.div>
-          <div className="we-focus-cards grid grid-cols-3 max-md:grid-cols-1 grid-rows-1 max-md:grid-rows-3 gap-6 mt-10">
+          <div className="we-focus-cards grid grid-cols-4 max-md:grid-cols-1 gap-6 mt-10">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -163,7 +163,7 @@ const AboutPage = () => {
               className="border-t-2 text-xl border-black/20 pt-4"
             >
               <h2 className="title-font mt-7  font-medium text-red-500">
-              Asesoría y acompañamiento personalizado 
+                Asesoría y acompañamiento personalizado
               </h2>
             </motion.div>
             <motion.div
@@ -174,12 +174,8 @@ const AboutPage = () => {
               className="border-t-2 text-xl border-black/20 pt-4"
             >
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
+                Diseño
               </h2>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
-              </p>
             </motion.div>
             <motion.div
               initial="initial"
@@ -189,12 +185,19 @@ const AboutPage = () => {
               className="border-t-2 text-xl border-black/20 pt-4"
             >
               <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
+                Producción
               </h2>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
-              </p>
+            </motion.div>
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              variants={animationVariants.zoomIn}
+              viewport={{ once: true, amount: 0.2 }}
+              className="border-t-2 text-xl border-black/20 pt-4"
+            >
+              <h2 className="title-font mt-7  font-medium text-red-500">
+                Entrega
+              </h2>
             </motion.div>
           </div>
         </div>
@@ -216,55 +219,10 @@ const AboutPage = () => {
             className="w-1/2 max-lg:w-2/3 max-md:w-full"
           >
             <h1 className="text-5xl ">
-              We seek to create value for investors across the
-              <span className="text-red-500"> real estate spectrum</span>
+              Ganamos experiencia en diseño y decoración, trabajando con
+              constructoras y clientes particulares mediante nuestros
+              <span className="text-red-500"> servicios y productos</span>
             </h1>
-            <div className="flex flex-col gap-5 mt-7">
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  // to={"/blogs"}
-                  to={"/"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  // to={"/blogs"}
-                  to={"/"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  // to={"/blogs"}
-                  to={"/"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-              <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
-                <Link
-                  // to={"/blogs"}
-                  to={"/"}
-                  onClick={scrollToTop}
-                  className="text-red-500"
-                >
-                  <FaArrowRight className="rotate-45" />
-                </Link>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
@@ -286,68 +244,26 @@ const AboutPage = () => {
               variants={animationVariants.fadeLeft}
               className="text-5xl max-md:text-4xl font-semibold"
             >
-              We use Real Estate to show our appreciation of the world.
+              Daniela Silva, nuestra fundadora
             </motion.h1>
             <motion.p
               variants={animationVariants.fadeLeft}
               className="text-2xl"
             >
-              We provide equity and debt capital globally to back projects that
-              make an impact.
+              profesional en diseño de inte riores egresada de la universidad
+              LaSalleCo llege y futura arquitecta, fundadora de Idealo Espacios
+              en 2020. Su vida siempre ha girado en torno al diseño interior y
+              la contrucción, con gustos por el color, las formas y con alto
+              potencial para crear. Constantemente trabaja por la innovación en
+              los diseños, además de la actualización de tendencias y estilos de
+              decoración.
             </motion.p>
-            <motion.div
-              variants={animationVariants.fadeLeft}
-              className="grid grid-cols-2 grid-rows-2 gap-10"
-            >
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in real estate
-                </p>
-              </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in real estate
-                </p>
-              </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in real estate
-                </p>
-              </div>
-              <div className="flex flex-col max-lg:justify-center max-lg:items-center">
-                <h2 className="title-font text-red-500 text-5xl max-md:text-4xl font-semibold">
-                  8
-                </h2>
-                <p className="text-xl">
-                  Years of seccessful experience in real estate
-                </p>
-              </div>
-            </motion.div>
-            <motion.div variants={animationVariants.fadeLeft}>
-              {/* <Link onClick={scrollToTop} to={"/contact"}> */}
-              <Link onClick={scrollToTop} to={"/"}>
-                <Button
-                  content={"Get In Touch"}
-                  padding={"px-6 py-3"}
-                  fontSize={"text-xl"}
-                />
-              </Link>
-            </motion.div>
           </motion.div>
           <div className="w-full max-lg:w-full h-full max-sm:max-h-[500px] ">
             <div className=" h-full w-full relative overflow-hidden rounded-lg">
               <img
-                src="/appriciation-section-image.jpg"
-                className="absolute w-full h-full object-cover object-center "
+                src="/daniela_silva.png"
+                className="absolute w-full h-full object-contain"
                 alt=""
               />
               <div className="absolute w-full h-full bg-black/50 "></div>
@@ -383,9 +299,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/jane-cooper.jpg"}
-                title={"Jane Cooper"}
-                from={"Real Estate"}
+                imgSrc={"/daniela_silva.png"}
+                title={"empleado 1"}
+                from={"cargo 1"}
               />
             </motion.div>
             <motion.div
@@ -393,9 +309,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/robert-fox.jpg"}
-                title={"Robert Fox"}
-                from={"Creative Director"}
+                imgSrc={"/daniela_silva.png"}
+                title={"empleado 2"}
+                from={"cargo 2"}
               />
             </motion.div>
             <motion.div
@@ -403,9 +319,9 @@ const AboutPage = () => {
               variants={animationVariants.zoomIn}
             >
               <ReviewCard
-                imgSrc={"/reviews/marvin-mckinney.jpg"}
-                title={"Marvin Mckinney"}
-                from={"CEO of Bimetrix"}
+                imgSrc={"/daniela_silva.png"}
+                title={"empleado 3"}
+                from={"cargo 3"}
               />
             </motion.div>
           </motion.div>
@@ -417,7 +333,7 @@ const AboutPage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Conoce a los Expertos
             </h1>
             <div>
               <Carousel />
@@ -427,7 +343,7 @@ const AboutPage = () => {
       </div>
       {/* review section end */}
       {/* partner brand section start */}
-      <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
+      {/* <div className="bg-gray-100 border-t-2 border-black/30  border-dashed">
         <div
           style={{ maxWidth: 1200 }}
           className=" mx-auto flex max-md:flex-col justify-center items-center gap-10 p-10 max-md:px-5  "
@@ -451,7 +367,7 @@ const AboutPage = () => {
             })}
           </motion.div>
         </div>
-      </div>
+      </div> */}
       {/* partner brand section end */}
     </>
   );

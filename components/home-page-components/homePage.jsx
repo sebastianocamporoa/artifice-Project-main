@@ -15,6 +15,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { scrollToTop } from "../../constants/scrollToTop";
 import { partnerBrands } from "../../constants/partnerBrands";
 import { useToast } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -31,6 +32,10 @@ const HomePage = () => {
       },
     });
   };
+
+  useEffect(() => {
+    document.title = "Artifice";
+  }, []);
   return (
     <div className=" w-full overflow-hidden">
       <div className="flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-center bg-no-repeat bg-cover backdrop-darken-[.3]">

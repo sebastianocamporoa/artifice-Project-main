@@ -29,22 +29,19 @@ export default function Carousel() {
         className="mySwiper text-xl"
       >
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          Conoce a <b>Empleado 1</b>, cuya visión creativa y pasión por el
+          diseño establecen nuevos estándares en la industria y lideran nuestro
+          compromiso con la innovación.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          <b>Empleado 2</b> aporta una rica experiencia y un liderazgo
+          estratégico que son fundamentales para guiar a nuestro equipo hacia
+          soluciones excepcionales y un servicio al cliente inigualable.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          La atención meticulosa al detalle de <b>Empleado 3</b> asegura que
+          cada proyecto se ejecute con precisión y calidad, sobrepasando las
+          expectativas de nuestros clientes en cada paso.
         </SwiperSlide>
 
         <div className="slider-controler flex max-md:justify-center  gap-3  mt-16">
