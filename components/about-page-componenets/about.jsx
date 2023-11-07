@@ -24,21 +24,10 @@ const AboutPage = () => {
           className="flex gap-10 justify-between items-end max-md:items-center px-10 mx-auto max-md:px-5 max-md:flex-col"
         >
           <div className="text-white flex flex-col gap-8 max-md:items-center max-md:text-center">
-            <h1 className="text-5xl font-bold">Who We Are</h1>
+            <h1 className="text-5xl font-bold">Quienes somos</h1>
             <p className="text-xl max-w-md">
-              Our mission is to engage in issues that are of concern to
-              individuals
+              Innovación y Diseño en Cada Espacio
             </p>
-          </div>
-          <div className="flex gap-12 max-sm:text-center text-white">
-            <div className="flex max-md:items-center flex-col gap-4">
-              <h2 className="text-4xl title-font font-bold">19K+</h2>
-              <p className="text-lg">Premium houses</p>
-            </div>
-            <div className="flex max-md:items-center flex-col gap-4">
-              <h2 className="text-4xl  title-font font-bold">5000+</h2>
-              <p className="text-lg">Premium houses</p>
-            </div>
           </div>
         </motion.div>
       </div>
@@ -56,16 +45,8 @@ const AboutPage = () => {
           <div className="flex w-full gap-10 max-md:flex-col max-md:justify-center max-md:items-center max-md:text-center">
             <div className="flex flex-col items-start justify-between max-md:items-center">
               <h1 className="text-5xl font-bold title-font w-max">
-                What we offer
+                LO QUE REPRESENTAMOS
               </h1>
-              <Link onClick={scrollToTop} to={"/blogs"}>
-                <Button
-                  content={"Services"}
-                  fontSize={"text-xl"}
-                  padding={"px-5  py-2"}
-                  furtherClasses={"mt-8"}
-                />
-              </Link>
             </div>
             <div className="w-full">
               <img
@@ -77,27 +58,21 @@ const AboutPage = () => {
           </div>
           <div className="what-we-do-cards mt-14 gap-8 max-md:grid-cols-1 max-md:grid-rows-3 grid grid-cols-3 grid-rows-1">
             <div>
-              <h2 className="text-2xl text-red-500 font-semibold">
-                Get an instant free valuation
-              </h2>
+              <h2 className="text-2xl text-red-500 font-semibold">Misión</h2>
               <p className="text-xl mt-2">
                 Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
                 urna in elit amet.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl text-red-500 font-semibold">
-                Get your property ready
-              </h2>
+              <h2 className="text-2xl text-red-500 font-semibold">Visión</h2>
               <p className="text-xl mt-2">
                 Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
                 urna in elit amet.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl text-red-500 font-semibold">
-                Offer acceptance
-              </h2>
+              <h2 className="text-2xl text-red-500 font-semibold">Valores</h2>
               <p className="text-xl mt-2">
                 Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
                 urna in elit amet.
@@ -118,13 +93,12 @@ const AboutPage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className=" w-1/2 max-md:w-full flex flex-col text-white items-start justify-between max-md:items-center"
           >
-            <h1 className="text-5xl font-bold title-font w-max">
-              What we offer
-            </h1>
             <p className="text-xl mt-5">
-              We are real estate agency that has been established since 1995
-              with many advantages over our competitors. We have more than 10000
-              happy customers and have worked with more than 200 distributors
+              Lo simplificamos en una frase, “el espacio es tuyo, el diseño
+              interior es nuestro”. Por eso nos encanta a yudar a buscar la
+              mejor solución que permita mejorar la calidad de vida de nuestro
+              clientes a través de la creación de espacios armónicos y
+              funcionales.
             </p>
           </motion.div>
 
@@ -135,7 +109,9 @@ const AboutPage = () => {
             viewport={{ once: true, amount: 0.2 }}
             className=" w-1/2 max-md:w-full text-white/50"
           >
-            <h2 className="text-2xl">Our Projects</h2>
+            <h2 className="text-2xl">
+              Familias que han mejorado su calidad de vida
+            </h2>
             <div className="relative w-fit max-md:mx-auto -mt-7 max-md:-mt-5">
               <h1 className="text-[150px] max-sm:text-[120px] font-semibold relative text-red-500">
                 200+
@@ -170,9 +146,11 @@ const AboutPage = () => {
             </div>
 
             <div className=" w-1/2 text-5xl max-lg:text-4xl max-md:w-full ">
-              <h1 className="font-semibold ">We focus on all</h1>
+              <h1 className="font-semibold ">
+                Vinculamos cuatro aspectos escenciales que nos convierten en
+              </h1>
               <h1 className="font-semibold  text-red-500">
-                Real Estate Class Saaets
+                pioneros en el medio
               </h1>
             </div>
           </motion.div>
@@ -184,7 +162,17 @@ const AboutPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="border-t-2 text-xl border-black/20 pt-4"
             >
-              <h2 className="title-font font-semibold">-01</h2>
+              <h2 className="title-font mt-7  font-medium text-red-500">
+              Asesoría y acompañamiento personalizado 
+              </h2>
+            </motion.div>
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              variants={animationVariants.zoomIn}
+              viewport={{ once: true, amount: 0.2 }}
+              className="border-t-2 text-xl border-black/20 pt-4"
+            >
               <h2 className="title-font mt-7  font-medium text-red-500">
                 Residential
               </h2>
@@ -200,23 +188,6 @@ const AboutPage = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="border-t-2 text-xl border-black/20 pt-4"
             >
-              <h2 className="title-font font-semibold">-01</h2>
-              <h2 className="title-font mt-7  font-medium text-red-500">
-                Residential
-              </h2>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
-              </p>
-            </motion.div>
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              variants={animationVariants.zoomIn}
-              viewport={{ once: true, amount: 0.2 }}
-              className="border-t-2 text-xl border-black/20 pt-4"
-            >
-              <h2 className="title-font font-semibold">-01</h2>
               <h2 className="title-font mt-7  font-medium text-red-500">
                 Residential
               </h2>
