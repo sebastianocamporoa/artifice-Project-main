@@ -34,7 +34,7 @@ export const proyects = [
   },
   {
     id: 4,
-    mainImage: "/Rent-houses/House-4/home4-1.jpg",
+    mainImage: "/proyects/arena/arena1.jpg",
     moreImages: [
       "/Rent-houses/House-4/home4-2.jpg",
       "/Rent-houses/House-4/home4-3.jpg",
@@ -45,7 +45,7 @@ export const proyects = [
   },
   {
     id: 5,
-    mainImage: "/Rent-houses/House-5/home5-1.jpg",
+    mainImage: "/proyects/arena/arena1.jpg",
     moreImages: [
       "/Rent-houses/House-5/home5-2.jpg",
       "/Rent-houses/House-5/home5-3.jpg",
@@ -56,7 +56,7 @@ export const proyects = [
   },
   {
     id: 6,
-    mainImage: "/Rent-houses/House-6/home6-1.jpg",
+    mainImage: "/proyects/arena/arena1.jpg",
     moreImages: [
       "/Rent-houses/House-6/home6-2.jpg",
       "/Rent-houses/House-6/home6-3.jpg",
